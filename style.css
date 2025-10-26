@@ -1,0 +1,125 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../imgs/astros.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(to bottom right, #f5e9d6, #fdf8f2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Botão principal: Ver meu signo */
+button.btn-primary {
+  background-color: #ba9d7c; /* Tom bege */
+  border: none;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover do botão principal */
+button.btn-primary:hover {
+  background-color: #da8c77; 
+}
+
+/* Botão secundário: Voltar */
+button.btn-secondary {
+  background-color: #ba9d7c; /* Mesma cor do botão principal */
+  border: none;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover do botão secundário */
+button.btn-secondary:hover {
+  background-color: #da8c77; 
+}
+
+/*Classe Botão*/
+/* Estilo para <a> com btn-primary */
+a.btn-primary {
+  background-color: #ba9d7c;
+  border: none;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover para <a> com btn-primary */
+a.btn-primary:hover {
+  background-color: #da8c77;
+}
+
+/* Estilo para <a> com btn-secondary */
+a.btn-secondary {
+  background-color: #ba9d7c;
+  border: none;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover para <a> com btn-secondary */
+a.btn-secondary:hover {
+  background-color: #da8c77;
+}
+
+/*Responsividade para telas menores*/
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button.btn-primary,
+  button.btn-secondary,
+  a.btn-primary,
+  a.btn-secondary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  p.text-center {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
